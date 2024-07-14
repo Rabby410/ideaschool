@@ -71,7 +71,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex text-lg">
         {navItems.map((item) => (
           <li key={item.id} className="relative group">
             <Link
@@ -82,7 +82,7 @@ const Navbar = () => {
             </Link>
             {/* Submenu for Services */}
             {item.subMenu && (
-              <ul className="md:mt-3 md:ml-2 absolute hidden group-hover:block mt-1 bg-gray-900 text-white rounded-lg shadow-lg w-50 whitespace-nowrap">
+              <ul className="text-sm md:mt-3 md:ml-2 absolute hidden group-hover:block mt-1 bg-gray-900 text-white rounded-lg shadow-lg w-50 whitespace-nowrap">
                 {item.subMenu.map((subItem) => (
                   <li key={subItem.id}>
                     <Link
