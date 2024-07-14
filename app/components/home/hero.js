@@ -9,9 +9,9 @@ const Hero = () => {
       <div className="bg-[#1d1d24]">
         <div className="bg-[url('/images/home/hero/image.jpg')] bg-no-repeat bg-cover bg-[100%]">
           <Header />
-          <div className="container mx-auto py-40">
+          <div className="container mx-auto py-40 px-5">
             <div>
-              <h3 className="text-4xl w-[35%] text-white font-semibold ">
+              <h3 className="text-4xl w-[40%] text-white font-semibold ">
                 One School Serving the Purposes of Here & Hereafter
               </h3>
               <div className="flex gap-2">
