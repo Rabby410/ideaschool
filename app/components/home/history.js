@@ -3,8 +3,10 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { FaBuildingUser, FaUserGraduate, FaSchool, FaArrowRight } from "react-icons/fa6";
 import { BsClipboardData, BsPeopleFill, BsBuildingsFill } from "react-icons/bs";
-import Odometer from "react-odometerjs";
-import "odometer/themes/odometer-theme-default.css";
+import dynamic from "next/dynamic"; // Use dynamic import for react-odometerjs
+
+// Dynamic import of Odometer component
+const Odometer = dynamic(() => import("react-odometerjs"), { ssr: false });
 
 const History = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,9 +42,16 @@ const History = () => {
     }
   }, [isVisible]);
 
+  useEffect(() => {
+    // Import CSS file dynamically on client side
+    if (typeof window !== 'undefined') {
+      import("odometer/themes/odometer-theme-default.css");
+    }
+  }, []);
+
   return (
     <>
-      <div ref={sectionRef} className="pt-20 bg-[url('/images/home/about/banner.jpg')]">
+      <div ref={sectionRef} className="pt-20 bg-[url('/images/home/about/banner.jpg')] bg-cover bg-no-repeat">
         <div className="bg-gradient-to-b from-transparent to-black">
           <div className="container mx-auto px-5 justify-center items-center">
             <p className="text-md font-semibold leading-5 mb-5 text-white">About us</p>
@@ -108,15 +117,15 @@ const History = () => {
         </div>
       </div>
       <div className="-mt-14 max-w-5xl mx-auto">
-      <div className="py-10 bg-blue-400 text-white px-5 rounded-lg shadow-md">
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
-          <h3 className="text-3xl font-semibold text-center md:text-left mb-2 md:mb-0">Start your Beautiful & Bright Future From Here</h3>
-          <button className="flex items-center gap-2 bg-blue-700 hover:bg-blue-600 text-white px-4 py-4 rounded-lg transition-colors duration-300 hover:scale-105 hover:transition-transform">
-            Apply Now <FaArrowRight className="text-xl" />
-          </button>
+        <div className="py-10 bg-blue-400 text-white px-5 rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
+            <h3 className="text-3xl font-semibold text-center md:text-left mb-2 md:mb-0">Start your Beautiful & Bright Future From Here</h3>
+            <button className="flex items-center gap-2 bg-blue-700 hover:bg-blue-600 text-white px-4 py-4 rounded-lg transition-colors duration-300 hover:scale-105 hover:transition-transform">
+              Apply Now <FaArrowRight className="text-xl" />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
