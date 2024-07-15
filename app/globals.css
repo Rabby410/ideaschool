@@ -26,3 +26,26 @@
     @apply hover:shadow-custom-hover;
   }
 
+
+  .title{
+    /* text-{#1f1f25] text-[60px] font-[700] */
+    color: #f3f3f7;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  .sub-title{
+    /* text-[#1f1f25] font-semibold text-3xl */
+    font-size: 30px;
+    line-height: 36px;
+    color: #dbdbde;
+    font-weight: 500;
+  }
+  
+  .para{
+    /* text-[#717173] text-xl */
+    font-size: 20px;
+    line-height: 28px;
+    color: #a7a7a9;
+    
+  }
