@@ -63,9 +63,9 @@ const Navbar = () => {
     { id: 4, text: "Contact us", link: "/contact" },
     { id: 5, text: "Achievements", link: "/achivments" },
     { id: 6, text: "Key Information", link: "#" },
-    { id: 7, text: "Policies", link: "#" },
-    { id: 8, text: "Facilities", link: "#" },
-    { id: 9, text: "Request For A Tour", link: "#" },
+    { id: 7, text: "Policies", link: "/policies" },
+    { id: 8, text: "Facilities", link: "/facilities" },
+    { id: 9, text: "Request For A Tour", link: "/registerForTour" },
     { id: 10, text: "Login", link: "#" },
   ];
 

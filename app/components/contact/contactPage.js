@@ -4,7 +4,6 @@ import { FaPhoneAlt, FaEnvelope, FaFax, FaMapMarkerAlt } from 'react-icons/fa';
 const ContactPage = () => {
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
           <h2 className="text-2xl font-semibold mb-4">Malibagh Branch</h2>
