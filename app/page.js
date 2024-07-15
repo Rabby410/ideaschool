@@ -4,6 +4,7 @@ import JoinNetwork from "./components/home/joinNetwork";
 import Welcome from "./components/home/welcome";
 import Banner from "./components/home/banner";
 import About from "./components/home/about";
+import History from "./components/home/history";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <Welcome/>
     <Banner/>
     <About/>
+    <History/>
     </>
   );
 }
