@@ -60,7 +60,7 @@ const Navbar = () => {
         { id: 38, text: "Online Payment", link: "#" },
       ],
     },
-    { id: 4, text: "Contact us", link: "#" },
+    { id: 4, text: "Contact us", link: "/contact" },
     { id: 5, text: "Achievements", link: "/achivments" },
     { id: 6, text: "Key Information", link: "#" },
     { id: 7, text: "Policies", link: "#" },
