@@ -20,3 +20,8 @@
     animation: float 3s ease-in-out infinite;
   }
   
+
+  .common-box {
+    @apply rounded-[16px] shadow-custom-shadow bg-shadow-background border-[0.5px] border-shadow-border;
+    @apply hover:shadow-custom-hover;
+  }

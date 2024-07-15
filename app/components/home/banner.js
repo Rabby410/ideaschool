@@ -39,7 +39,7 @@ const Banner = () => {
                 <p className="text-gray-600">+(000) 000 0000 000</p>
               </div>
             </div>
-            <div>
+            <div className="hover-animate">
                 <img src="./images/home/banner/b1.jpg" alt="banner1" className="rounded-2xl h-[400px]"/>
                 <img src="./images/home/banner/b2.jpg" alt="banner2" className="rounded-2xl h-[400px] lg:-mt-[280px] lg:ml-[285px]"/>
             </div>
