@@ -5,6 +5,7 @@ import Banner from "./components/home/banner";
 import About from "./components/home/about";
 import History from "./components/home/history";
 import Support from "./components/home/support";
+import SchoolTiming from "./components/home/schoolTiming";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <About/>
     <History/>
     <Support/>
+    <SchoolTiming/>
     </>
   );
 }
