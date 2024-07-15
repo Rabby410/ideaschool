@@ -7,16 +7,16 @@ const Welcome = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div className="flex mx-auto gap-5 justify-center items-center py-20">
+        <div className="flex  flex-col md:flex-row mx-auto gap-2 justify-center items-center py-20">
           <div>
             <WelcomeSlider />
-            <div className="mt-5" style={{textAlign: "-webkit-center"}}>
-              <span className="flex justify-center items-center gap-5 px-5 py-2 border border-blue-500 text-blue-500 hover:text-white hover:bg-blue-500 w-[25%]">Gallery <FaArrowRight />
+            <div className="md:mt-5 mb-5" style={{textAlign: "-webkit-center"}}>
+              <span className="flex justify-center items-center gap-5 px-5 py-2 border border-blue-500 text-blue-500 hover:text-white hover:bg-blue-500 w-[40%] md:w-[25%]">Gallery <FaArrowRight />
               </span>
             </div>
           </div>
-          <div>
-            <h3>WELCOME TO AVERROES INTERNATIONAL SCHOOL</h3>
+          <div className="px-2 md:px-0">
+            <h3 className="text-md text-center md:text-left font-semibold md:text-2xl md:font-bold">WELCOME TO AVERROES INTERNATIONAL SCHOOL</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
               <div className="border -2 border-blue-500 hover:shadow-lg">
                 <div className="p-2 text-center text-blue-500 " style={{ textAlign: "-webkit-center" }}>

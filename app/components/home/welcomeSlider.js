@@ -43,7 +43,7 @@ const WelcomeSlider = () => {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-10 md:bottom-0 left-0 right-0 flex justify-center space-x-2">
         {scrollSnaps.map((_, index) => (
           <button
             key={index}
