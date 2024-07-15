@@ -66,7 +66,7 @@ const Navbar = () => {
     { id: 7, text: "Policies", link: "/policies" },
     { id: 8, text: "Facilities", link: "/facilities" },
     { id: 9, text: "Request For A Tour", link: "/registerForTour" },
-    { id: 10, text: "Login", link: "#" },
+    { id: 10, text: "Login", link: "/auth" },
   ];
 
   return (
